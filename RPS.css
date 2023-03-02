@@ -1,39 +1,64 @@
-/* this css have to be the style paper for the RPS.html */
-/* i want it to be colorful, so use 4 or 5 colors */
+/* thi is the css style file for the RPS.html */
 
-
-/* this is the style for the body */
 body {
     background-color: #000000;
-    color: #ffffff;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
 }
 
-/* this is the style for the h1 */
-h1 {
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* this is the style for the h2 */
-h2 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* this is the style for the buttons */
-button {
+#container {
     background-color: #000000;
-    color: #ffffff;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 40px;
-    font-weight: bold;
+    width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
+#header {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+#content {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+#nav {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
