@@ -4,6 +4,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="RPS.css">
 </head>
@@ -86,55 +89,53 @@
         </div>
     </div>
     <script>
-        
         const rock = document.getElementById('rock');
         const paper = document.getElementById('paper');
         const scissors = document.getElementById('scissors');
         const user = document.getElementById('user');
         const computer = document.getElementById('computer');
-        let userPoints = 0;
-        let computerPoints = 0;
+        let userScore = 0;
+        let computerScore = 0;
         rock.addEventListener('click', () => {
             const computerChoice = Math.floor(Math.random() * 3);
             if (computerChoice === 0) {
-                alert('Computer chose Rock. It\'s a tie!');
+                alert('Computer chose rock. It\'s a tie!');
             } else if (computerChoice === 1) {
-                alert('Computer chose Paper. You lose!');
-                computerPoints++;
-                computer.innerHTML = computerPoints;
+                alert('Computer chose paper. You lose!');
+                computerScore++;
+                computer.innerHTML = computerScore;
             } else {
-                alert('Computer chose Scissors. You win!');
-                userPoints++;
-                user.innerHTML = userPoints;
+                alert('Computer chose scissors. You win!');
+                userScore++;
+                user.innerHTML = userScore;
             }
         });
         paper.addEventListener('click', () => {
             const computerChoice = Math.floor(Math.random() * 3);
             if (computerChoice === 0) {
-                alert('Computer chose Rock. You win!');
-                userPoints++;
-                user.innerHTML = userPoints;
+                alert('Computer chose rock. You win!');
+                userScore++;
+                user.innerHTML = userScore;
             } else if (computerChoice === 1) {
-                alert('Computer chose Paper. It\'s a tie!');
+                alert('Computer chose paper. It\'s a tie!');
             } else {
-                alert('Computer chose Scissors. You lose!');
-                computerPoints++;
-                computer.innerHTML = computerPoints;
+                alert('Computer chose scissors. You lose!');
+                computerScore++;
+                computer.innerHTML = computerScore;
             }
         });
         scissors.addEventListener('click', () => {
             const computerChoice = Math.floor(Math.random() * 3);
             if (computerChoice === 0) {
-                alert('Computer chose Rock. You lose!');
-                computerPoints++;
-                computer.innerHTML = computerPoints;
+                alert('Computer chose rock. You lose!');
+                computerScore++;
+                computer.innerHTML = computerScore;
             } else if (computerChoice === 1) {
-                alert('Computer chose Paper. You win!');
-                userPoints++;
-                user.innerHTML = user
-                Points;
+                alert('Computer chose paper. You win!');
+                userScore++;
+                user.innerHTML = userScore;
             } else {
-                alert('Computer chose Scissors. It\'s a tie!');
+                alert('Computer chose scissors. It\'s a tie!');
             }
         });
     </script>
